@@ -6,4 +6,4 @@
 set -x
 export GRAILS_HOME=$OPENSHIFT_DATA_DIR/grails-2.3.4
 export PATH=$GRAILS_HOME/bin:$PATH
-grails -Dgrails.work.dir=$OPENSHIFT_DATA_DIR/.grails war
+grails -Dgrails.work.dir=$OPENSHIFT_DATA_DIR.grails war
