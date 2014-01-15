@@ -7,4 +7,5 @@ set -x
 export GRAILS_HOME=$OPENSHIFT_DATA_DIR/grails-2.3.4
 export PATH=$GRAILS_HOME/bin:$PATH
 cd $OPENSHIFT_REPO_DIR
+export GRAILS_OPTS="-Xmx512m -Xms256m -XX:MaxPermSize=256m"
 grails -Dgrails.work.dir=$OPENSHIFT_DATA_DIR.grails prod war
